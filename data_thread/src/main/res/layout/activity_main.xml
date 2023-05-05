@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="107dp"
+        android:lines="10"
+        android:maxLines="10"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="runOnUiThread позволяет выполнить задачу на главном потоке немедленно, даже если вызов происходит из другого потока, а post и postDelayed добавляют задачу в очередь сообщений View для выполнения в главном потоке.При этом postDelayed добавляет задачу в очередь с задержкой, указанной в миллисекундах."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="249dp"
+        android:layout_height="77dp"
+        android:text="Вызов : 1. runn1, 2. runn2, 3. runn3"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="13dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

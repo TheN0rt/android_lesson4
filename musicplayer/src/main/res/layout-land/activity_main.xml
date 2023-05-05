@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:layout_weight="1"
+            android:text="Здесь должна находиться картинка трека" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/musicId"
+                android:layout_width="144dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="133dp"
+                android:layout_marginEnd="134dp"
+                android:layout_marginBottom="40dp"
+                android:text="Название музыки"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/artistId"
+                android:layout_width="123dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="162dp"
+                android:layout_marginEnd="162dp"
+                android:layout_marginBottom="52dp"
+                android:rotationX="0"
+                android:text="Исполнитель" />
+
+            <Button
+                android:id="@+id/play"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Воспроизведение" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
